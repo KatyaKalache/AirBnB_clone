@@ -2,10 +2,16 @@ header {
     background-color: white;
     height: 70px;
     width: 100%;
-    border-bottom: 1px #CCCCCC; }
+    border-bottom: 1px solid #CCCCCC;
+    background-position: left top;
+}
+
 .logo {
     float: left;
     padding-left: 20px;
+    height: 60px;
+    width: 142px;
     background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
     align-items: center;
 }
