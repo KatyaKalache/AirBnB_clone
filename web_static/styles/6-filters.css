@@ -1,5 +1,6 @@
 .filters {
     position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -40,16 +41,19 @@ h4 {
 }
 
 .locations {
+    position: absolute;
     width: 20%;
     border-right: 1px solid #DDDDDD;
-    left: 20px;
+    height: 100%;
+    text-align: center;
 }
 
 .amenities {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 20%;
-    left: 240px;
+    left: 200px;
+    text-align: center;
 }
 
 ul {
@@ -61,14 +65,15 @@ li {
     margin: 10px;
 }
 .popover {
+    position: relative;
+    width: 80%;
+    height: 280px;
+    z-index: 1;
     display: none;
-    height: 300px;
-    position: absolute;
     background-color: #FAFAFA;
-    width: 90%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
-    left: -20px;
+    text-align: left;
 }
 
 .locations:hover .popover {
