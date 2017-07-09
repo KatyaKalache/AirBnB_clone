@@ -75,10 +75,14 @@ article {
 }
 
 .user {
-    float: left;
+    position: relative;
+    width: 100%;
+    top: 10px;
     font-size: 14px;
 }
 .description {
-    top: 10px;
+    position: relative;
+    top: 15px;
     font-size: 14px;
+    padding-bottom: 25px;
 }
