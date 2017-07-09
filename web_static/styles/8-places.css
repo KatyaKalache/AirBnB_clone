@@ -1,10 +1,15 @@
 .places {
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 30px;
-    position: absolute;
-    top: left;
+    position: relative;
 }
 
 h1 {
+    width: 100%;
     font-size: 30px;
 }
 
@@ -14,7 +19,8 @@ h2 {
 
 article {
     align-items: center;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 390px;
     padding: 20px;
@@ -39,9 +45,15 @@ article {
 
 .information {
     display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
     height: 80px;
     border-top: #DDDDDD solid 1px;
     border-bottom: #DDDDDD solid 1px;
+    font-size: 14px;
+    line-height: 120px;
 }
 
 .max_guest {
@@ -60,4 +72,13 @@ article {
     width: 100px;
     background-image: url("../images/icon_bath.png");
     background-repeat: no-repeat;
+}
+
+.user {
+    float: left;
+    font-size: 14px;
+}
+.description {
+    top: 10px;
+    font-size: 14px;
 }
